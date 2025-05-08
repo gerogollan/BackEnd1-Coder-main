@@ -1,0 +1,28 @@
+<h1>PRODUCT LIST</h1>
+
+<ul>
+    {{#if products}}
+    <p>Total de productos: {{products.length}}</p>
+    {{#each products}}
+    <li>
+        {{#if products.thumbnail}}
+        <img src="{{thumbnail}}" alt="img" width="20px" height="20px">
+        {{else}}
+        <p>NO IMAGEN</p>
+        {{/if}}
+        
+        
+        <strong> {{title}}</strong>
+              <p>{{price}}</p>
+              <p>{{description}}</p>
+    </li>
+    {{/each}}
+
+    {{else}}
+    <p>No han llegado productos</p>
+    {{/if}}
+</ul>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/main"></script>

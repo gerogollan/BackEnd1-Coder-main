@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Old Skool Shoe",
+    "description": "The Iconic Shoe that Brought our Sidestripe to Life: This is the Old Skool",
+    "code": "SHO-001",
+    "price": 90000,
+    "status": true,
+    "stock": 12,
+    "category": "shoes",
+    "thumbnails": [
+      "https://i.imgur.com/88wLEJC.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "asd",
+    "description": "asd",
+    "code": "123",
+    "price": "123",
+    "status": "on",
+    "stock": "123",
+    "category": "asd",
+    "thumbnails": [
+      "https://i.imgur.com/88wLEJC.png"
+    ]
+  }
+]

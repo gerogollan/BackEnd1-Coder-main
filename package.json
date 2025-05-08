@@ -1,0 +1,21 @@
+{
+    "name": "backendcoder",
+    "version": "20.14.0",
+    "description": "A backend project for coderhouse",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon",
+        "dev":"nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^5.1.0",
+        "express-handlebars": "^8.0.3",
+        "multer": "^1.4.5-lts.2",
+        "socket.io": "^4.8.1"
+    }
+}
