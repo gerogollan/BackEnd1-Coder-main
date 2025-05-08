@@ -4,14 +4,12 @@
     {{#if products}}
     <p>Total de productos: {{products.length}}</p>
     {{#each products}}
-    <li>
-        {{#if products.thumbnail}}
-        <img src="{{thumbnail}}" alt="img" width="20px" height="20px">
+    {{#if thumbnails}}
+            <img src="{{thumbnails.[0]}}" alt="img" width="100px" height="100px">
         {{else}}
-        <p>NO IMAGEN</p>
+            <p>NO IMAGEN</p>
         {{/if}}
-        
-        
+    <li>
         <strong> {{title}}</strong>
               <p>{{price}}</p>
               <p>{{description}}</p>
@@ -19,7 +17,7 @@
     {{/each}}
 
     {{else}}
-    <p>No han llegado productos</p>
+    <p style="padding: 30px; ">No hay productos cargados, ingresalos desde /realtimeproducts !</p>
     {{/if}}
 </ul>
 

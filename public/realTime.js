@@ -49,15 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   socket.on("update-products", (products) => {
     console.log("RECIBIDOS", products.length, "PRODUCTOS");
 
-    const deleteButtons = document.querySelectorAll(".delete-btn");
-    deleteButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const productId = button.getAttribute("data-id");
-        console.log("Eliminando producto con ID:", productId);
-        socket.emit("delete-product", productId);
-      });
-    });
-
     const html = products
       .map(
         (product) => `
@@ -71,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${product.title}</p>
         <p>${product.price}</p>
         <p>${product.description}</p>
-        <button class="delete-btn" data-id="${product.id}">X</button>
+        <button class="delete-btn" data-id="${product.id}">Delete Item</button>
         <hr>
       </div>
     `
@@ -82,5 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
       <h2>Lista de productos</h2>
       ${html}
     `;
+    
+    const deleteButtons = document.querySelectorAll(".delete-btn");
+    deleteButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const productId = button.getAttribute("data-id");
+        console.log("Eliminando producto con ID:", productId);
+        socket.emit("delete-product", productId);
+      });
+    });
   });
 });

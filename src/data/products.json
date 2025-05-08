@@ -11,18 +11,5 @@
     "thumbnails": [
       "https://i.imgur.com/88wLEJC.png"
     ]
-  },
-  {
-    "id": 2,
-    "title": "asd",
-    "description": "asd",
-    "code": "123",
-    "price": "123",
-    "status": "on",
-    "stock": "123",
-    "category": "asd",
-    "thumbnails": [
-      "https://i.imgur.com/88wLEJC.png"
-    ]
   }
 ]
