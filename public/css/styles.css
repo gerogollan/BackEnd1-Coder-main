@@ -1,0 +1,40 @@
+*{
+    font-family: monospace;
+}
+
+#form {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  form label {
+    text-transform: uppercase;
+  }
+
+   form input[type="text"],
+  form input[type="number"],
+  form input[type="checkbox"],
+  form button {
+    margin: 0px 0px 10px 0px;
+    
+  }
+ 
+  form input[type="checkbox"] {
+    accent-color: #ff00001f;
+  }
+  
+  form button {
+        padding: 5px 10px;
+        background-color: #ff00001f;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: red;
+  }
