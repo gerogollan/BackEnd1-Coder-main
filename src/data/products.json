@@ -11,5 +11,18 @@
     "thumbnails": [
       "https://i.imgur.com/88wLEJC.png"
     ]
+  },
+  {
+    "id": 2,
+    "title": "ASD",
+    "description": "asd",
+    "code": "asd",
+    "price": "123",
+    "status": "on",
+    "stock": "132",
+    "category": "asd",
+    "thumbnails": [
+      "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/12/23/10351977_800.jpg"
+    ]
   }
 ]

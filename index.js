@@ -16,7 +16,6 @@ const httpServer = http.createServer(app);
 const io = new Server(httpServer);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-// Necesitás esto para poder usar __dirname con ESModules
 
 
 //middleware
@@ -45,42 +44,3 @@ httpServer.listen(PORT, () => {
   console.log(`Server working on port | http://localhost:${PORT} `);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//immports de multer
-//  import multer from "multer";
-//  import path from "path";
-// import __dirname from "path";;
-//fin de multer imports
-
-//multer
-// let imageCounter = 1; // Counter to keep track of image numbers
-// const storageConfig = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, "./public");
-//   },
-//   filename: (req, file, cb) => {
-//     cb(null, `img${imageCounter++}${path.extname(file.originalname)}`);
-//   },
-// });
-//  const upload = multer({ storage: storageConfig });
-//  app.post("/upload", upload.single("archivo"), (req, res) => {
-//    res.send("Archivo subido correctamente");
-//  });
-// //fin de multer
